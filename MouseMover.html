@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MouseMText</title>
+<meta charset="UTF-8"/>
+<script>
+	function getCoordinates(ev)
+	{
+		//document.getElementById("coord").innerHTML=ev.clientX+","+ev.clientY;
+		document.getElementById("coord").innerHTML=ev.pageX+","+ev.pageY;
+	}
+</script>
+</head>
+<body onmousemove="getCoordinates(event);">
+	<center><h1><u>This is a Mouse Coordinates</u></h1></center>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<font color="#000099" size="+4">Mouse Coordinates:</font>
+	<span id="coord" style="position:relative; font-size:36px; color:#990000;"></span>
+</body>
+</html>
